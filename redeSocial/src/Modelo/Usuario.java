@@ -1,5 +1,8 @@
 package Modelo;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 public class Usuario {
     private int Id;
     private String nome;
@@ -7,16 +10,16 @@ public class Usuario {
     private String email;
     private String senha;
     private LocalDateTime dataCadastro;
-    public list<Usuario> amogos;
-    public list<Post> posts;
+    public List<Usuario> amigos;
+    public List<Post> posts;
 
-    public Usuario(java.lang.String nome, java.lang.String username, java.lang.String email, java.lang.String senha, LocalDateTime dataCadastro, list<Usuario> amogos, list<Post> posts) {
+    public Usuario(String nome, String username, String email, String senha, LocalDateTime dataCadastro, List<Usuario> amigos, List<Post> posts) {
         this.nome = nome;
         this.username = username;
         this.email = email;
         this.senha = senha;
         this.dataCadastro = dataCadastro;
-        this.amogos = amogos;
+        this.amigos = amigos;
         this.posts = posts;
     }
 
@@ -28,31 +31,31 @@ public class Usuario {
         Id = id;
     }
 
-    public java.lang.String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(java.lang.String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public java.lang.String getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(java.lang.String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    public java.lang.String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(java.lang.String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public java.lang.String getSenha() {
+    public String getSenha() {
         return senha;
     }
 
@@ -68,24 +71,24 @@ public class Usuario {
         this.dataCadastro = dataCadastro;
     }
 
-    public list<Usuario> getAmogos() {
-        return amogos;
+    public List<Usuario> getamigos() {
+        return amigos;
     }
 
-    public void setAmogos(list<Usuario> amogos) {
-        this.amogos = amogos;
+    public void setamigos(List<Usuario> amigos) {
+        this.amigos = amigos;
     }
 
-    public list<Post> getPosts() {
+    public List<Post> getPosts() {
         return posts;
     }
 
-    public void setPosts(list<Post> posts) {
+    public void setPosts(List<Post> posts) {
         this.posts = posts;
     }
 
     @java.lang.Override
-    public java.lang.String toString() {
+    public String toString() {
         return "Usuario{" +
                 "Id=" + Id +
                 ", nome=" + nome +
@@ -93,7 +96,7 @@ public class Usuario {
                 ", email=" + email +
                 ", senha=" + senha +
                 ", dataCadastro=" + dataCadastro +
-                ", amogos=" + amogos +
+                ", amigos=" + amigos +
                 ", posts=" + posts +
                 '}';
     }
@@ -110,4 +113,11 @@ public class Usuario {
         return java.util.Objects.hash(super.hashCode(), Id);
     }
 
+    public void  adicionaAmigos(Usuario amigo){ amigos.add(amigo);
+    }
+    public void removerAmigos(Usuario amigo){amigos.remove(amigo);
+    }
+    public void adicionarPost(Post post){posts.add(post);
+    }
+    public void removerPost(Post post){posts.remove(post);}
 }
