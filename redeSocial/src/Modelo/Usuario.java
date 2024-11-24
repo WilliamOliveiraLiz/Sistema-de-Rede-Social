@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class Usuario {
-    private int Id;
+    private integer Id;
     private String nome;
     private String username;
     private String email;
