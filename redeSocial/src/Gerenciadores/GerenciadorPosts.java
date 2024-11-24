@@ -10,7 +10,7 @@ public class GerenciadorPosts {
     public void criar(Post post){
 
     }
-    . public Post buscarPorId(int id){
+     public Post buscarPorId(int id){
 
     }
     public List<Post> listarPorUsuario(int idUsuario){
