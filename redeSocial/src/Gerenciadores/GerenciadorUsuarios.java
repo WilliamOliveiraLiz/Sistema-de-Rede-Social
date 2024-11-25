@@ -7,14 +7,14 @@ import java.util.stream.Collectors;
 
 public class GerenciadorUsuarios {
     private List<Usuario> usuarios;
-    private int proximoID;
+    private Integer proximoID;
     public void Cadastrar(Usuario usuario){
         usuario.setId(proximoID++);
         usuarios.add(usuario);
     }
     public Usuario buscarPorID(){
         return usuarios.stream()
-                .filter(usuario -> usuario.getId().equals.buscarPorID())
+                .filter(usuario -> buscarPorID() == usuario.getId())
                 .findFirst()
                 .orElse(null);
     }
@@ -24,7 +24,7 @@ public class GerenciadorUsuarios {
                 .collect(Collectors.toList());
     }
     public boolean atualizar(Usuario usuario){
-        for (int i=0;i< usuarios.size();i++){
+        for (Integer i=0;i< usuarios.size();i++){
             if(usuarios.get(i).getId().equals(usuario.getId())){
                 usuarios.set(i,usuario);
                 return true;
@@ -39,12 +39,12 @@ public class GerenciadorUsuarios {
         return false;
     }
     public void adicionarAmizade(int idUsuario, int idUsuario1){
-        if ((usuarios.get(idUsuario).equals(idUsuario))){
-            adicionarAmizade();
+        if ((usuarios.get(idUsuario).equals(idUsuario1))){
+            adicionarAmizade(idUsuario,idUsuario1);
         }
     }
     public void removerAmizade(){
-        if (usuarios.get(buscarPorID().equals(usuarios)) {
+        if (usuarios.get(buscarPorID().equals(usuarios))) {
             removerAmizade();
         }
     }

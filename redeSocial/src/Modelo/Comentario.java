@@ -4,13 +4,13 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Comentario {
-    private int ID;
+    private Integer ID;
     private String autor;
     private  String conteudo;
     private LocalDateTime dataComentario;
     private Post post;
 
-    public Comentario(int ID, String autor, String conteudo, LocalDateTime dataComentario, Post post) {
+    public Comentario(Integer ID, String autor, String conteudo, LocalDateTime dataComentario, Post post) {
         this.ID = ID;
         this.autor = autor;
         this.conteudo = conteudo;
@@ -18,7 +18,7 @@ public class Comentario {
         this.post = post;
     }
 
-    public int getID() {
+    public Integer getID() {
         return ID;
     }
 

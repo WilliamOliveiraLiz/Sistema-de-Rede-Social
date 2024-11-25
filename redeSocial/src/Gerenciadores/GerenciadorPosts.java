@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GerenciadorPosts {
     private List<Post> Posts;
-    private int proximoID;
+    private Integer proximoID;
     public void criar(Post post){
 
     }

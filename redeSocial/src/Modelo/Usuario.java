@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class Usuario {
-    private integer Id;
+    private Integer Id;
     private String nome;
     private String username;
     private String email;
@@ -23,7 +23,7 @@ public class Usuario {
         this.posts = posts;
     }
 
-    public int getId() {
+    public Integer getId() {
         return Id;
     }
 

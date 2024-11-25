@@ -3,14 +3,14 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class Post {
-    private int ID;
+    private Integer ID;
     private Usuario autor;
     private String conteudo;
     private LocalDateTime dataPublicaçao;
     private List<Usuario> curtidas;
     private List<Comentario> comentarios;
 
-    public Post(int ID, Usuario autor, String conteudo, LocalDateTime dataPublicaçao, List<Usuario> curtidas, List<Comentario> comentarios) {
+    public Post(Integer ID, Usuario autor, String conteudo, LocalDateTime dataPublicaçao, List<Usuario> curtidas, List<Comentario> comentarios) {
         this.ID = ID;
         this.autor = autor;
         this.conteudo = conteudo;
@@ -19,7 +19,7 @@ public class Post {
         this.comentarios = comentarios;
     }
 
-    public int getID() {
+    public Integer getID() {
         return ID;
     }
 
