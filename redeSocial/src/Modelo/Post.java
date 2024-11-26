@@ -19,7 +19,7 @@ public class Post {
         this.comentarios = comentarios;
     }
 
-    public Integer getID() {
+    public static Integer getID() {
         return ID;
     }
 
@@ -51,7 +51,7 @@ public class Post {
         this.dataPublicaçao = dataPublicaçao;
     }
 
-    public List<Usuario> getCurtidas() {
+    public  List<Usuario> getCurtidas() {
         return curtidas;
     }
 
@@ -59,7 +59,7 @@ public class Post {
         this.curtidas = curtidas;
     }
 
-    public List<Comentario> getComentarios() {
+    public  List<Comentario> getComentarios() {
         return comentarios;
     }
 
@@ -80,9 +80,9 @@ public class Post {
     }
     public void adicionaCurtida(Usuario usuario){curtidas.add(usuario);
     }
-    public void removerCurtida(Usuario usuario){curtidas.add(usuario);
+    public void removerCurtida(Usuario usuario){curtidas.remove(usuario);
     }
-    public void adicionarComentario(Comentario comentario){comentarios.add(comentario);}
-    public void removerComentario(Comentario comentario){comentarios.remove(comentario);}
+    public static void adicionarComentario(Comentario comentario){comentarios.add(comentario);}
+    public static void removerComentario(Comentario comentario){comentarios.remove(comentario);}
 }
 

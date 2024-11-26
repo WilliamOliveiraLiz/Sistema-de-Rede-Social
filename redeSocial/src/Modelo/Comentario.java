@@ -18,7 +18,7 @@ public class Comentario {
         this.post = post;
     }
 
-    public Integer getID() {
+    public static Integer getID() {
         return ID;
     }
 
