@@ -48,9 +48,4 @@ public class GerenciadorUsuarios {
             removerAmizade();
         }
     }
-    private void validarUsuario(Usuario usuario){
-
-
-    }
-
 }

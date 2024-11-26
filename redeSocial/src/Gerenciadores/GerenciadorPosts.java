@@ -62,7 +62,4 @@ public class GerenciadorPosts {
         }
         return false;
     }
-    private void validarPost(Post post){
-
-    }
 }
